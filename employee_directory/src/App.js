@@ -37,10 +37,10 @@ useEffect(() => {
     setFiltered(upDated)
   }
   const handleChange=(event)=>{
-    setState(event.target.value)
-    if(state.length===0){
+    if(state.length===1){
       setFiltered(employees)
     }
+    setState(event.target.value)
   }
   return (
     <div className="App">
